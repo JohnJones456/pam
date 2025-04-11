@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.MainPage"
+             BackgroundColor="#f2f2f2">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+
+            <Label Text="Gerenciador de Produtos"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#1f2937"
+                   HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="16"
+                   Padding="25"
+                   HasShadow="True"
+                   WidthRequest="300">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <Button
+                        Text="Listar Produtos"
+                        x:Name="btnListaProduto"
+                        Clicked="btnListaProduto_Clicked"
+                        BackgroundColor="#3b82f6"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        />
+
+                    <Button
+                        Text="Adicionar Produto"
+                        BackgroundColor="#10b981"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        />
+
+                    <Button
+                        Text="Editar Produto"
+                        BackgroundColor="#f59e0b"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        />
+
+                    <Button
+                        Text="Excluir Produto"
+                        BackgroundColor="#ef4444"
+                        TextColor="White"
+                        FontSize="18"
+                        CornerRadius="12"
+                        HeightRequest="50"
+                        />
+
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
